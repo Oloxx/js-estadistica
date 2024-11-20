@@ -124,7 +124,7 @@ function runExperiments(seeds, n, levels, repeticions) {
 }
 
 
-const n = [50, 100, 200, 500, 1000];
+const n = Array.from({ length: 20 }, (_, i) => 50 + i * 50);
 const seeds = [1234, 5678, 911, 777];
 const levels = ["Totalment ordenat", "Totalment desordenat", "Parcialment ordenat"];
 const repeticions = 10;
