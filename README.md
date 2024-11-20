@@ -31,9 +31,9 @@ Aquest projecte realitza una anàlisi de rendiment de diversos algorismes d'orde
 
 ### **1. Executar el codi JavaScript**
    - Assegura't de tenir instal·lat [Node.js](https://nodejs.org) i executa la següent comanda per instal·lar les dependències necessàries:
-    ```bash
-    npm install
-    ```
+     ```bash
+     npm install
+     ```
    - Executa el script `sorting_algorithms.js` per generar el fitxer JSON amb els resultats.
      ```bash
      node sorting_algorithms.js
