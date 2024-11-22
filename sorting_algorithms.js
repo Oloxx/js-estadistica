@@ -97,9 +97,9 @@ function runExperiments(seeds, n, levels, repeticions) {
                 n.forEach(length => {
                     const data = generateData(length, level, rng);
                     const algorithms = {
-                        QuickSort: arr => quickSort(arr),
-                        BubbleSort: arr => bubbleSort(arr),
-                        MergeSort: arr => mergeSort(arr)
+                        quicksort: arr => quickSort(arr),
+                        bombolla: arr => bubbleSort(arr),
+                        mergesort: arr => mergeSort(arr)
                     };
 
                     Object.keys(algorithms).forEach(algName => {
