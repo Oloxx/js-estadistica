@@ -66,7 +66,7 @@ function measureSortAlgorithm(algorithm, arr) {
     const start = process.hrtime();
     algorithm(arr);
     const [seconds, nanoseconds] = process.hrtime(start);
-    const elapsedTime = seconds + nanoseconds / 1e6;
+    const elapsedTime = seconds + nanoseconds / 1e9;
     return elapsedTime;
 }
 
@@ -109,8 +109,8 @@ function runExperiments(seeds, n, levels, repeticions) {
                             Algorisme: algName,
                             Mida: length,
                             Nivell_ordenacio: level,
-                            Temps: elapsedTime.toFixed(6),
-                            RAM: ramTotal.toFixed(2),
+                            Temps: elapsedTime,
+                            RAM: Math.round(ramTotal),
                             CPU: cpuInfo,
                             Llenguatge: "JavaScript"
                         });
